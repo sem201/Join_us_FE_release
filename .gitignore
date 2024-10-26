@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+package-lock.json
+
+# prettier 라는 vs코드 자동 정렬 extension 무시
+.prettierignore
