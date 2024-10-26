@@ -45,7 +45,6 @@ table {
 
 #root{
 	width:100%;
-	background-color: aqua;
 }
 
 @media (width>440px){

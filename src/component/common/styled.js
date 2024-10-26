@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
 
+// Footer.jsx
+// 푸터 디자인
 export const FooterContainer = styled.div`
   width: 100%;
   height: 78px;
@@ -27,4 +29,18 @@ export const FooterP = styled.p`
   font-family: Pretendard;
   font-size: 12px;
   font-weight: 400;
+`;
+
+// Button.jsx
+export const commonButton = styled.button`
+  width: 313px;
+  height: 60px;
+  border-radius: 94px;
+`;
+
+export const buttonText = styled.p`
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 20px;
+  line-height: normal;
 `;
