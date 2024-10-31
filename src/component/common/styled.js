@@ -36,6 +36,8 @@ export const commonButton = styled.button`
   width: 313px;
   height: 60px;
   border-radius: 94px;
+  border: 0;
+  background-color: ${(props) => props.bgColor || "#333"};
 `;
 
 export const buttonText = styled.p`

@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import "./index.css";
 import router from "./router.jsx";
 const root = document.querySelector("#root");
-console.log(root);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />

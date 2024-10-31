@@ -2,9 +2,9 @@ import React from "react";
 import * as S from "./styled";
 const Button = (props) => {
   return (
-    <S.FooterButton>
-      <S.buttonText>{props}</S.buttonText>
-    </S.FooterButton>
+    <S.commonButton bgColor={props.bgColor}>
+      <S.buttonText>{props.children}</S.buttonText>
+    </S.commonButton>
   );
 };
 
