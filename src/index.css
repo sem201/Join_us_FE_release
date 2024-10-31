@@ -43,9 +43,13 @@ table {
 	border-spacing: 0;
 }
 
+body {
+  padding: 1em;
+}
+
+
 #root{
 	width:100%;
-	background-color: aqua;
 }
 
 @media (width>440px){
