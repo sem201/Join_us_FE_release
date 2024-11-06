@@ -4,6 +4,8 @@ import App from "./App";
 import LoginPage from "./page/loginpage";
 import JoinPage from "./page/JoinPage";
 import SignupPage from "./page/SignupPage";
+import JoinExPage from "./page/JoinExPage";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/join",
     element: <JoinPage />,
+  },
+  {
+    path: "/Ex",
+    element: <JoinExPage />,
   }
 ]);
 
