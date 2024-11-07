@@ -34,7 +34,7 @@ const JoinExPage = () => {
     <>
       <MainContainer>
         <JoinHeader />
-        {currentPage < 3 && ( // currentPage가 3이 아닐 때만 S.TextContainer 렌더링
+        {currentPage < 3 && ( // currentPage가 3보다 작을 떄만 S.TextContainer 렌더링
           <S.TextContainer>
             {currentPage === 1 && (
               <>

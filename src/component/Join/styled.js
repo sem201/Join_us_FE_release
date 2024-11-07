@@ -59,6 +59,7 @@ export const ExButton = styled.div`
   border-radius: 24px;
   background: ${(props) => (props.isClicked ? "var(--Primary-color, #417E59)" : "var(--Gray1, #F1F1F1)")};
   border: 1px solid ${(props) => (props.isClicked ? "var(--Sub-color, #66A776)" : "var(--Gray2, #E0E0E0)")};
+  transition: background-color 0.3s; /* 배경색 전환 애니메이션 */
 
   color: ${(props) => (props.isClicked ? "var(--White, #FFF)" : "var(--Gray5, #2E302D)")};
   text-align: center;
@@ -139,9 +140,12 @@ export const ExContainer = styled.div`
 `;
 
 export const ExTextContainer = styled.div`
-  width: 50%;
+  display: inline-flex;
+  width: fit-content;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
-  margin-left: 20px;
   border-radius: 34px;
   border: 1px solid var(--Gray2, #E0E0E0);
   background: var(--Gray1, #F1F1F1);
@@ -217,4 +221,130 @@ export const Vector = styled.div`
   height: 52.754px;
   flex-shrink: 0;
   margin: 15px;
+`;
+
+export const ScrollContainer = styled.div`
+  display: flex;
+  overflow-x: auto; // 가로 방향의 스크롤을 활성화
+  width: 100%;
+  padding: 8px 0px 30px 0px;
+  gap: 16px; // 버튼 사이의 간격 조정
+  scrollbar-width: none; // 스크롤바 숨기기
+  ::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
+  }
+`;
+
+export const KeyHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 50px 0;
+`;
+
+export const HeaderBtn = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+`;
+
+export const Select = styled.button`
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  top: 110px; /* Select 버튼 아래로 위치 조정 */
+  left: 65%;
+  transform: translateX(-50%);
+  padding: 8px 0;
+  z-index: 100;
+  width: 98px;
+  height: 132px;
+  flex-shrink: 0;
+
+  border-radius: 16px;
+  border: 1px solid var(--Gray2, #E0E0E0);
+  background: var(--Gray1, #F1F1F1);
+`;
+
+export const DropdownItem = styled.div`
+  padding: 3px 8px;
+  text-align: center;
+
+  color: var(--Gray5, #2E302D);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+`;
+
+export const Create = styled.div`
+
+`;
+
+export const HeaderRight = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+export const KeyMainContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* 아이템을 여러 줄에 걸쳐 배치 */
+  overflow-y: auto;
+  height: 100vh;
+  padding: 16px;
+  gap: 16px; /* 카드 간격 설정 */
+  scrollbar-width: none; // 스크롤바 숨기기
+  ::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
+  }
+`;
+
+export const ImageCard = styled.div`
+  flex: 1 1 calc(50% - 16px); /* 한 줄에 두 개씩 배치되도록 너비 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+`;
+
+export const KeyTextContainer = styled.div`
+  display: inline-flex;
+  width: fit-content;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 34px;
+  border: 1px solid var(--Gray2, #E0E0E0);
+  background: var(--White, #FFF);
+
+  span {
+    color: var(--Gray5, #2E302D);
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
 `;
