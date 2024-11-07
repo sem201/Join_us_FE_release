@@ -5,6 +5,7 @@ import LoginPage from "./page/loginpage";
 import JoinPage from "./page/JoinPage";
 import SignupPage from "./page/SignupPage";
 import JoinExPage from "./page/JoinExPage";
+import JoinKeyPage from "./page/JoinKeyPage";
 
 const router = createBrowserRouter([
   {
@@ -21,9 +22,13 @@ const router = createBrowserRouter([
     element: <JoinPage />,
   },
   {
-    path: "/Ex",
+    path: "/ex",
     element: <JoinExPage />,
-  }
+  },
+  {
+    path: "/key",
+    element: <JoinKeyPage />,
+  },
 ]);
 
 export default router;
