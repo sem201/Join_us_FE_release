@@ -239,7 +239,7 @@ export const KeyHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0 50px 0;
+  padding: 20px 0 30px 0;
 `;
 
 export const HeaderBtn = styled.button`
@@ -333,7 +333,6 @@ export const KeyTextContainer = styled.div`
   padding: 2px 8px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   border-radius: 34px;
   border: 1px solid var(--Gray2, #E0E0E0);
   background: var(--White, #FFF);
@@ -347,4 +346,82 @@ export const KeyTextContainer = styled.div`
     line-height: normal;
     letter-spacing: -0.64px;
   }
+`;
+
+export const CreateMainContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+  width: 269px;
+  height: 478px;
+`;
+
+export const CreateFrame = styled.div`
+  position: absolute;
+  z-index: 1;
+  width: 269px;
+  height: 478px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Gray2, #E0E0E0);
+
+  margin-bottom: 5px;
+`;
+
+export const CreateBtn = styled.div`
+  position: absolute;
+  z-index: 2;
+`
+
+export const SBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const CautionText = styled.div`
+  display: flex;
+  align-items: center;
+  width: 313px;
+  span{
+    color: var(--Negative-Error-Cancel, #F66466);
+    font-family: Pretendard;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+`;
+
+export const CreateText = styled.input`
+  display: flex;
+  width: 313px;
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Gray1, #F1F1F1);
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+
+  ::placeholder {
+    color: var(--Gray3, #B2B3B2);
+    font-family: Pretendard;
+    font-size: 5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+`;
+
+export const CreateBottomContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  margin: 0 auto;
+  width: 313px;
 `;
